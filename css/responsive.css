@@ -9,6 +9,7 @@
 
 @media only screen and (max-width: 2560px){
 	.main-header .main-box .outer-container {
+		position: sticky;
 		display: block;
 		height: 60px;
 	}
@@ -906,6 +907,13 @@
 		padding: 0px 10px !important;
 	}
 }
+
+@media only screen and (max-width: 1032px){
+	.main-header .info-options > .get-quote-btn:hover {
+		pointer-events: none;
+	}
+}
+
 
 
 

@@ -1,23 +1,20 @@
-const popupForm = "#contact-form";
+const popupForm = "#popupEnq";
 const form = "#popupEnqTwo";
-const url = "https://hooks.zapier.com/hooks/catch/14298827/38wq103/";
-
+const url = "https://hooks.zapier.com/hooks/catch/14298827/35nte0v/";
 
 $("document").ready(function () {
-
-
   $(popupForm).validate({
     rules: {
-      "form_name": {
+      name: {
         required: true,
         minlength: 3,
       },
-      "form_mobile": {
+      mobile: {
         required: true,
         minlength: 10,
         maxlength: 10,
       },
-      "form_email": {
+      email: {
         required: true,
         email: true,
       },
@@ -25,21 +22,49 @@ $("document").ready(function () {
     errorElement: "span",
     errorClass: "text-danger",
     messages: {
-      "form_name": { minlength: "Name at least have 4 characters" },
-      "form_mobile": {
+      name: { minlength: "Name at least have 4 characters" },
+      mobile: {
         minlength: "mobile number at least have 10 Digits",
       },
-      "form_email": { email: "please enter a valid email address" },
+      email: { email: "please enter a valid email address" },
     },
     submitHandler: function () {
-      console.log("bsdkjfbhksjadhnbfkjasjdfnkjmasedfj")
       submitForm(popupForm);
+    },
+  });
+
+  $(form).validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 3,
+      },
+      mobile: {
+        required: true,
+        minlength: 10,
+        maxlength: 10,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+    },
+    errorElement: "span",
+    errorClass: "text-danger",
+    messages: {
+      name: { minlength: "Name at least have 4 characters" },
+      mobile: {
+        minlength: "mobile number at least have 10 Digits",
+      },
+      email: { email: "please enter a valid email address" },
+    },
+    submitHandler: function () {
+      submitForm(form);
     },
   });
 
   function submitForm(formName) {
     var data = $(formName).serialize();
-    console.log({ data });
     $.ajax({
       type: "POST",
       url,
@@ -111,3 +136,16 @@ $("document").ready(function () {
     return false;
   }
 });
+<form id="popupEnq" action="javascript:void(0);" method="POST">
+
+<div class="col-12 text-center">
+                  <input type="hidden" name="source" value="Enquiry Popup" />
+                  <button
+                    id="btn-poptwo"
+                    name="enquiry"
+                    value="enquiry"
+                    class="mt-3 btn"
+                  >
+                    Submit
+                  </button>
+                </div>
