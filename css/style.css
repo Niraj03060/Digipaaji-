@@ -1114,6 +1114,7 @@ font-family: 'Raleway', sans-serif;*/
 /* form style four */
 
 .contact-form.style-four input[type="text"],
+.contact-form.style-four input[type="tel"],
 .contact-form.style-four input[type="email"],
 .contact-form.style-four input[type="password"],
 .contact-form.style-four select,

@@ -1,23 +1,19 @@
-const popupForm = "#contact-form";
-const form = "#popupEnqTwo";
+const contactForm = "#contact-form-ctc";
 const url = "https://hooks.zapier.com/hooks/catch/14298827/38wq103/";
-
-
+console.log(contactForm);
 $("document").ready(function () {
-
-
-  $(popupForm).validate({
+  $(contactForm).validate({
     rules: {
-      "form_name": {
+      form_name: {
         required: true,
         minlength: 3,
       },
-      "form_mobile": {
+      form_number: {
         required: true,
         minlength: 10,
         maxlength: 10,
       },
-      "form_email": {
+      form_email: {
         required: true,
         email: true,
       },
@@ -25,15 +21,14 @@ $("document").ready(function () {
     errorElement: "span",
     errorClass: "text-danger",
     messages: {
-      "form_name": { minlength: "Name at least have 4 characters" },
-      "form_mobile": {
+      form_name: { minlength: "Name at least have 4 characters" },
+      form_number: {
         minlength: "mobile number at least have 10 Digits",
       },
-      "form_email": { email: "please enter a valid email address" },
+      form_email: { email: "please enter a valid email address" },
     },
     submitHandler: function () {
-      console.log("bsdkjfbhksjadhnbfkjasjdfnkjmasedfj")
-      submitForm(popupForm);
+      submitForm(contactForm);
     },
   });
 
@@ -46,18 +41,18 @@ $("document").ready(function () {
       data: data,
       beforeSend: function () {
         $("#errmsgthree").html("");
-        $("#btn-poptwo").html(
+        $("#submit-btn").html(
           '<i class="fa fa-spinner fa-spin"></i> Sending...'
         );
-        $("#btn-poptwo").attr("disabled", true);
+        $("#submit-btn").attr("disabled", true);
       },
 
       success: function (data) {
         if (data.status === "error") {
           $("#errmsgthree").fadeIn(1000, function () {
             $("#errmsgthree").fadeOut(5000).hide();
-            $("#btn-poptwo").html("Submit");
-            $("#btn-poptwo").removeAttr("disabled");
+            $("#submit-btn").html("Submit");
+            $("#submit-btn").removeAttr("disabled");
             Swal.fire({
               icon: "error",
               title: "Error",
@@ -68,8 +63,8 @@ $("document").ready(function () {
             });
           });
         } else if (data.status === "success") {
-          $("#btn-poptwo").html("Submit");
-          $("#btn-poptwo").removeAttr("disabled");
+          $("#submit-btn").html("Submit");
+          $("#submit-btn").removeAttr("disabled");
 
           Swal.fire({
             icon: "success",
@@ -84,8 +79,8 @@ $("document").ready(function () {
               .html("" + data.message + "")
               .fadeIn(100)
               .show();
-            $("#btn-poptwo").html("Submit");
-            $("#btn-poptwo").removeAttr("disabled");
+            $("#submit-btn").html("Submit");
+            $("#submit-btn").removeAttr("disabled");
             $("#errmsgthree").html(
               '<div class="alert alert-danger"><span class="glyphicon glyphicon-info-sign"></span> &nbsp; ' +
                 data +
