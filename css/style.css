@@ -985,7 +985,7 @@ font-family: 'Raleway', sans-serif;*/
 
 .contact-details {
 	position: relative;
-	padding: 55px 0 25px;
+	padding: 55px 0px 0px 0px;
 }
 
 .contact-details h4 {
@@ -3481,11 +3481,12 @@ text-align: center;
 
 
 .end-section{
-	margin: 50px 0px 10px 0px;
+	margin: 50px 0px 0px 0px;
 	padding: 10px 0px 10px 0px;
 	background-color: #F3713C;
 }
 .bottom-section{
+	margin: 0px 25px 0px 50px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -3493,18 +3494,24 @@ text-align: center;
 }
 
 .inner-bottom-section{
-	
-    padding: 5px 10px;
+	width: 20%;
+    padding: 5px 25px;
 }
 .inner-bottom-section h3{
-	margin: 0px 0px 0px 0px;
+	margin: 10px 0px 15px 0px;
    font-size: 1.9rem;
    text-align: left;
-   line-height: 5rem;
+   line-height: 2.3rem;
 }
 
-.inner-bottom-section p{
+.inner-bottom-section ul li{
 	color: #ffffff;
-	font-size: 1.3rem;
-	line-height: 1.5rem;
+	font-size: 1.5rem;
+	line-height: 2.2rem;
 }
+
+/* .inner-bottom-section ul li::before{
+	content: "\2022";
+	color: #3841b2;
+} */
+

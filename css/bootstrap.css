@@ -1735,7 +1735,8 @@ a.text-warning:hover {
 }
 
 .text-danger {
-    color: #a94442
+    color: #a94442;
+    margin: 0px 10px 0px 35px;
 }
 
 a.text-danger:focus,
@@ -7876,7 +7877,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+   
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px
