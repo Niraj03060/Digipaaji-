@@ -1932,7 +1932,7 @@ element css
 }
 
 .filter-tabs-three li:first-child {
-	margin-left: 0px;
+	margin-right: 15px;
 }
 
 .filter-tabs-three li.active:before {

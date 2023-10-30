@@ -3018,9 +3018,7 @@ font-family: 'Raleway', sans-serif;*/
 .main-blog-comtainer{
 	position: relative;
 }
-.blog1{
 
-}
 
 
 /*Comment Block*/
@@ -3266,6 +3264,7 @@ font-family: 'Raleway', sans-serif;*/
 .partner-logo .image .partners-title{
 	opacity: 0.5;
 	transition: .5s ease;
+	user-select: none;
 }
 
 .partner-logo .image:hover .partners-title {
@@ -3476,9 +3475,7 @@ margin: 10px;
 width: 100%;
 text-align: center;
 }
-.thankyou-img {
 
-}
 
 
 .end-section{
@@ -3509,6 +3506,14 @@ text-align: center;
 	color: #ffffff;
 	font-size: 1.5rem;
 	line-height: 2.2rem;
+}
+
+.contact-us-section a:active{
+    color:#000 !important;
+}
+.contact-us-section a:visited{
+    color:#000 !important;
+
 }
 
 /* .inner-bottom-section ul li::before{
