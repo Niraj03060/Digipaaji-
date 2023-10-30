@@ -611,11 +611,10 @@
     left: 0;
     top: 0;
     color: #fff;
-    font-size: 60px;
     background: #F3713C;
     height: 160px;
     width: 160px;
-    line-height: 140px;
+    line-height: 160px;
     border-radius: 50%;
     transition: .5s ease;
     transform: scale(0.8,0.8);
