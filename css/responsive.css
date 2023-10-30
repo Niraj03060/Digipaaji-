@@ -918,6 +918,11 @@
 	}
 }
 
+@media only screen and (max-width: 990px){
+	.map-section .default-form-area {
+	   z-index: 8;
+	}
+}
 
 
 
