@@ -1761,7 +1761,7 @@ font-family: 'Raleway', sans-serif;*/
 	border: 1px solid #999999;
 	height: 162px;
 	width: 160px;
-	line-height: 153px;
+	line-height: 152px;
 	border-radius: 50%;
 	margin:  0 auto;
 	margin-bottom: 25px;
@@ -3520,3 +3520,6 @@ text-align: center;
 	color: #3841b2;
 } */
 
+.img-box{
+	text-align: center;
+}

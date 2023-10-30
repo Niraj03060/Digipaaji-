@@ -126,9 +126,14 @@ li {
 @media (min-width: 1200px) {
 	.container,
 	.container-fluid {
+	
 		padding: 0;
 	}
 }
+.main_nav-stick{
+	position: sticky !important;
+}
+
 
 .w-100 {
 	width: 100% !important;
