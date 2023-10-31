@@ -684,7 +684,6 @@
 	.verified-by-title {
 		font-weight: 600;
 		font-size: 1.5rem;
-		margin: 5px 10px 20px 10px;
 	
 	}
 	.contact-us-inner-container p{
@@ -728,7 +727,6 @@
 	.verified-by-title {
 		font-weight: 600;
 		font-size: 1.2rem;
-		margin: 5px 10px 20px 10px;
 	
 	}
 	.contact-us-inner-container p{
@@ -772,7 +770,6 @@
 	.verified-by-title {
 		font-weight: 600;
 		font-size: 1.1rem;
-		margin: 5px 10px 20px 10px;
 	
 	}
 	.contact-us-inner-container p{
@@ -924,6 +921,25 @@
 	}
 }
 
+
+@media only screen and (max-width: 950px){
+	.mobile-footer-container{
+		position: fixed;
+	height: 50px;
+	display: flex;
+	flex-wrap: nowrap;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #F3713C;
+	justify-content: center;
+	align-items: center;
+    }
+    .main-footer {
+		margin: 0px 0px 46px 0px;
+		padding: 16px 0px;
+	}
+}
 
 
    

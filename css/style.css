@@ -3443,7 +3443,7 @@ margin: 10px;
 .verified-by-title {
     font-weight: 600;
     font-size: 1.9rem;
-    margin: 5px 10px 20px 10px;
+    margin: 5px 1px 20px 1px;
 
 }
 .verified-by-container{
@@ -3523,4 +3523,44 @@ text-align: center;
 
 .img-box{
 	text-align: center;
+}
+
+
+.mobile-footer-container{
+	display: none;
+	/* position: fixed;
+	height: 50px;
+	display: flex;
+	flex-wrap: nowrap;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #F3713C;
+	justify-content: center;
+	align-items: center; */
+}
+
+.mobile-footer-inner-section{
+	padding: 9px 0px;
+	border : 0.5px solid #b1b1b1;
+	text-align: center;
+	width: 50%;
+}
+
+.mobile-footer-inner-section a span{
+	font-size: 18px;
+	display: inline-block;
+     color: green;
+	 margin: 0px 5px 0px 0px;
+	 padding: 0px 0px 0px 0px;
+}
+.mobile-footer-inner-section a {
+	padding: 15px 24px;
+}
+
+.mobile-footer-inner-section h5{
+	display: inline-block;
+	font-size: 1.46rem;
+	font-weight: 600;
+
 }
