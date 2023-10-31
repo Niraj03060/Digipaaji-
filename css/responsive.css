@@ -925,7 +925,7 @@
 @media only screen and (max-width: 950px){
 	.mobile-footer-container{
 		position: fixed;
-	height: 54px;
+	height: 50px;
 	display: flex;
 	flex-wrap: nowrap;
 	right: 0;
