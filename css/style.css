@@ -941,7 +941,7 @@ font-family: 'Raleway', sans-serif;*/
 .main-footer {
 	position: relative;
 	background-color: #242424;
-	padding: 24px 0;
+	padding: 12px 0;
 }
 
 .main-footer .container-box {
@@ -1039,7 +1039,7 @@ font-family: 'Raleway', sans-serif;*/
 	width: 100%;
 	height: 55px;
 	font-size: 16px;
-	color: #848484;
+	color: #222222;
 	line-height: 30px;
 	padding: 12px 25px;
 	font-weight: 300;
@@ -3442,7 +3442,7 @@ font-family: 'Raleway', sans-serif;*/
 
 .contact-us-section {
 	text-align: center;
-	margin: 10px 40px;
+	margin: 10px 14px;
 }
 
 .contact-us-icon {
@@ -3512,7 +3512,7 @@ font-family: 'Raleway', sans-serif;*/
 
 
 .end-section {
-	margin: 50px 0px 0px 0px;
+	margin: 90px 0px 0px 0px;
 	padding: 10px 0px 10px 0px;
 	background-color: #F3713C;
 }
@@ -3544,14 +3544,8 @@ font-family: 'Raleway', sans-serif;*/
 	line-height: 2.2rem;
 }
 
-.contact-us-section a:active {
-	color: #000 !important;
-}
 
-.contact-us-section a:visited {
-	color: #000 !important;
 
-}
 
 /* .inner-bottom-section ul li::before{
 	content: "\2022";
@@ -3601,4 +3595,19 @@ font-family: 'Raleway', sans-serif;*/
 	font-size: 1.46rem;
 	font-weight: 600;
 
+}
+
+.fixed-btn {
+    position: fixed;
+    right: -52px;
+    bottom: 32%;
+    z-index: 999;
+    transform: rotate(270deg);
+}
+.btn-orange{
+	border-radius: 10px;
+	padding: 2px 18px;
+	background-color: #F3713C;
+	color: #ffffff;
+	border: 1px solid #ffffff;
 }

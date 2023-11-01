@@ -1015,6 +1015,12 @@
 
 	.main-footer {
 		margin: 0px 0px 50px 0px;
-		padding: 14px 0px;
+		padding: 12px 0px;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.fixed-btn {
+		display: none;
 	}
 }
