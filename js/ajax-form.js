@@ -35,7 +35,7 @@ $("document").ready(function () {
   function submitForm(formName) {
     var data = $(formName).serializeArray();
     console.log({ data });
-    console.log([data]);
+   
     $.ajax({
       type: "POST",
       url,
