@@ -33,12 +33,12 @@ $("document").ready(function () {
   });
 
   function submitForm(formName) {
-    var data = $(formName).serializeArray();
-    console.log({ data });
+    var data = $(formName).serialize();
+    console.log({ data});
    
     $.ajax({
       type: "POST",
-      url,
+      url: url,
       data: data,
       beforeSend: function () {
         $("#errmsgthree").html("");

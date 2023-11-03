@@ -735,11 +735,12 @@ element css
 
 .social-icon-one li {
 	position: relative;
-	margin: 0 7px;
+	/* margin: 0 7px; */
 	display: inline-block;
 }
 
 .social-icon-one li a {
+	padding: 10px 7px;
 	position: relative;
 	color: #666;
 	font-size: 16px;

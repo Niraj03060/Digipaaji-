@@ -4,6 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <title>Best Digital Marketing & Creative Agency | DigiPaaji</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KH9BB7P');</script>
+    <!-- End Google Tag Manager -->
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css" />
@@ -29,6 +36,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH9BB7P"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="page-wrapper">
         <!-- Preloader -->
         <div class="preloader"></div>
@@ -2227,7 +2238,7 @@
 
     <section class="mobile-footer" style="position: fixed; z-index: 10;" >
         <div class="mobile-footer-container">
-            <div class="mobile-footer-inner-section">
+            <div class="mobile-footer-inner-section " data-toggle="modal" data-target="#enquiry-form">
                 <a href="#contact"><span class="fa fa-comments-o"></span><h5>Lets connect</h5></a>
             </div>
             <div class="mobile-footer-inner-section">
@@ -2237,8 +2248,85 @@
         </div>
 
     </section>
-    <div class="fixed-btn"  data-target="#contact-us">
+    
+    <div class="fixed-btn"  data-toggle="modal" data-target="#enquiry-form">
         <a href="#contact-us"><button type="button" class=" btn-orange" data-target="#contact">LET'S CONNECT</button></a>
+    </div>
+    <div
+      class="modal fade"
+      id="enquiry-form"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="enquiry-formTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-main-flex" role="document">
+        <div class="modal-flex1"><img src="images\background\Group 221 (2).png" ></div>
+        <div class="modal-content modal-flex1 modal-flex1-2">
+          <div class="modal-header">
+            <h3>Thinking Growth?</h3>
+            <h5
+              class="modal-title pl-2 pl-md-3 text-center"
+              id="exampleModalLongTitle"
+            >
+              Connect with PAAJI
+            </h5>
+            <button
+              type="button"
+              class="close custom-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body d-flex flex-column">
+            <div id="errmsg"></div>
+            <div id="msg"></div>
+            <form id="contact-form-ctc" name="contact_form" class="contact-form form-style36" action="javascript:void(0)"
+                    method="post">
+
+                    <div class="row clearfix">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" name="form_name" class="form-control form-style36"  placeholder="Name*"
+                                    required="" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="email" name="form_email" class="form-control required email form-style36" 
+                                    placeholder="Email Address*" required="" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="tel" name="form_number" class="form-control required form-style36" 
+                                    placeholder="Contact no*" required/>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group style-two">
+                                <textarea name="form_message" class="form-control textarea"
+                                    placeholder=" Message"></textarea>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="contact-section-btn">
+                        <div class="form-group ml-50 mr-50">
+                            <!-- <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden"
+                                 /> -->
+                            <!-- <a href="thankyou.html"> -->
+                                <button  class="theme-btn btn-style-fifteen-1 w-50" id="#submit-btn" type="submit"
+                                data-loading-text="Please wait..." >
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+          </div>
+        </div>
+      </div>
     </div>
     
     <!--End pagewrapper-->
@@ -2278,6 +2366,25 @@
     <script id="map-script" src="js/map-script.js"></script>
     <script src="js\validation.js"></script>
     <script src="js\ajax-form.js"></script>
+   
+    <script type="text/javascript" charset="utf-8">
+        $(window).on("load", function () {
+          $("#enquiry-form").modal("show");
+        });
+  
+        $(".connect-btn").click(function () {
+          $("#enquiry-form").modal("show");
+        });
+    </script>
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  />
+
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  /> -->
     
 </body>
 
