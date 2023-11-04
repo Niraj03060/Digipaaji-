@@ -19,7 +19,7 @@
     <!-- REVOLUTION LAYERS STYLES -->
     <link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css" />
     <!-- REVOLUTION NAVIGATION STYLES -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css\style.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="images\DP_logo.jpg" type="image/x-icon" />
     <link rel="icon" href="images\DP_logo.jpg" type="image/x-icon" />
@@ -110,8 +110,9 @@
             
                                     <!--Right Info-->
                                     <div class="info-options">
-                                        <a  class="get-quote-btn" href="#contact-us">LET'S TALK</a>
+                                        <a href="#contact" class="get-quote-btn" >LET'S TALK</a>
                                         <ul class="social-icon-one">
+                                            
                                             <li>
                                                 <a href="https://www.facebook.com/DigiPaaji1?mibextid=ZbWKwL" target="_blank"><span
                                                         class="fa fa-facebook"></span></a>
@@ -1971,6 +1972,25 @@
                 <div class="news-block-one col-md-4 col-sm-6 blog-5">
                     <div class="inner-box">
                         <div class="image">
+                            <a href="https://kamleshdixit.medium.com/targeting-snackalicious-community-worldwide-via-digital-platforms-02b1daa845c6" target="_blank">
+                                <img class="blog-image" src="images\background\blog-6.png" alt="" /></a>
+                            <!-- <div class="date">Inspiration</div> -->
+                        </div>
+                        <div class="lower-content">
+                            <h5>Post Info</h5>
+                            <div class="post-meta">By Kamlesh Dixit</div>
+                            <a href="https://kamleshdixit.medium.com/targeting-snackalicious-community-worldwide-via-digital-platforms-02b1daa845c6" target="_blank">
+                                <h4>View Blog</h4>
+                            </a>
+                            <div class="text">
+                                Targeting “Snackalicious Community” Worldwide via Digital Platforms.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-block-one col-md-4 col-sm-6 blog-5">
+                    <div class="inner-box">
+                        <div class="image">
                             <a href="https://medium.com/@karancholera/unleash-the-power-of-high-conversion-landing-pages-websites-into-billion-dollar-business-cb1464db2587" target="_blank">
                                 <img class="blog-image" src="images\background\blog4.png" alt="" /></a>
                             <!-- <div class="date">Inspiration</div> -->
@@ -1987,6 +2007,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- <div class="news-block-two col-md-4 col-sm-6">
                     <div class="inner-box">
                         <div class="lower-content">
@@ -2014,8 +2035,8 @@
 
     <!-- map section -->
     <div id="contact-us"></div>
-    <section class="map-section" id="contact">
-        <div id="contact-us">
+    <section class="map-section">
+        <div id="contact">
         <div class="container">
             <div class="sec-title centered">
                 <div class="big-title">Let's Connect</div>
@@ -2239,7 +2260,7 @@
     <section class="mobile-footer" style="position: fixed; z-index: 10;" >
         <div class="mobile-footer-container">
             <div class="mobile-footer-inner-section " data-toggle="modal" data-target="#enquiry-form">
-                <a href="#contact"><span class="fa fa-comments-o"></span><h5>Lets connect</h5></a>
+                <a><span class="fa fa-comments-o"></span><h5>Lets connect</h5></a>
             </div>
             <div class="mobile-footer-inner-section">
                 
@@ -2250,7 +2271,7 @@
     </section>
     
     <div class="fixed-btn"  data-toggle="modal" data-target="#enquiry-form">
-        <a href="#contact-us"><button type="button" class=" btn-orange" data-target="#contact">LET'S CONNECT</button></a>
+        <a ><button type="button" class=" btn-orange">LET'S CONNECT</button></a>
     </div>
     <div
       class="modal fade"
@@ -2283,7 +2304,7 @@
           <div class="modal-body d-flex flex-column">
             <div id="errmsg"></div>
             <div id="msg"></div>
-            <form id="contact-form-ctc" name="contact_form" class="contact-form form-style36" action="javascript:void(0)"
+            <form id="modal-form-ctc" name="modal_contact_form" class="contact-form form-style36" action="javascript:void(0)"
                     method="post">
 
                     <div class="row clearfix">
@@ -2317,7 +2338,7 @@
                             <!-- <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden"
                                  /> -->
                             <!-- <a href="thankyou.html"> -->
-                                <button  class="theme-btn btn-style-fifteen-1 w-50" id="#submit-btn" type="submit"
+                                <button  class="theme-btn btn-style-fifteen-1 w-50" id="submit-btn" type="submit"
                                 data-loading-text="Please wait..." >
                                 Submit
                             </button>

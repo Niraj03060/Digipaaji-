@@ -12,13 +12,14 @@ website:    http://www.themepunch.com
   cursor:pointer;
   background:#fff;
   min-width:60px;
-    min-height:60px;
+  min-height:60px;
   position:absolute;
   display:block;
   z-index:100;
-    border-radius:50%;
+  border-radius:50%;
 }
 .ares.tparrows:hover {
+  padding:0;
 }
 .ares.tparrows:before {
   font-family: "revicons";
@@ -1419,7 +1420,7 @@ border-radius:6px;
     font-size:13px;
     font-weight:700;
     text-transform:uppercase;
-    font-family:"Roboto Slab"
+    font-family:"Roboto Slab";
     margin-bottom:5px;
 }
 
@@ -2179,7 +2180,7 @@ website:    http://www.themepunch.com
 	position:absolute;
 	width:100%;
 	height:100%;
-	background:#transparent;
+	background: transparent;
 	padding:10px;
 	margin-left:-10px;margin-top:-10px;
 	box-sizing:content-box;
