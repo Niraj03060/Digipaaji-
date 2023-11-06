@@ -1735,13 +1735,13 @@ a.text-warning:hover {
 }
 
 .text-danger {
-    color: #a94442;
+    color: #ff0400;
     margin: 0px 10px 0px 35px;
 }
 
 a.text-danger:focus,
 a.text-danger:hover {
-    color: #843534
+    color: #ff0400
 }
 
 .bg-primary {
