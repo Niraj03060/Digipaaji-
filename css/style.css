@@ -3635,6 +3635,7 @@ font-family: 'Raleway', sans-serif;*/
 @media only screen and (max-width: 600px) {
 	.modal-main-flex{
 		flex-direction: column;
+		margin-top: 69px;
 	}
 	.modal-flex1{
 		text-align: center;
