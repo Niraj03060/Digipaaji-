@@ -33,6 +33,12 @@
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
@@ -505,8 +511,9 @@
     </section>
 
     <!-- services icon section -->
-    <h2 class="services-cards-title">Why Choose Us</h2>
+    <!-- <h2 class="services-cards-title">Why Choose Us</h2> -->
     <section class="feature">
+        <h2 class="services-cards-title">Why Choose Us</h2>
         <div class="container-fluid">
             <div class="row flex-box">
                 <div class="services-block-one">
@@ -538,9 +545,9 @@
                     </div>
                 </div>
                 <div class="services-block-one">
-                    <div class="inner-box">
+                    <div class="inner-box" id="services-last-block">
                         <!-- <div class="icon-box">
-                            <span class="icon-interface-1"></span>
+                            <span class="icon-technology-1"></span>
                         </div> -->
                         <a>
                             <h3>Approachability<br />&amp; commitment</h3>
@@ -548,7 +555,22 @@
                         <div class="text">
                             Dedicated account manager and access to agency promotors.
                         </div>
-                        <a  class="read-more"><span class="icon-arrows-1"></span></a>
+                        <a class="read-more"><span class="icon-arrows-1"></span></a>
+                    </div>
+                </div>
+                
+                <div class="services-block-one">
+                    <div class="inner-box">
+                        <!-- <div class="icon-box">
+                            <span class="icon-pen"></span>
+                        </div> -->
+                        <a >
+                            <h3>Higher <br />Conversion Ratio</h3>
+                        </a>
+                        <div class="text">
+                          Our Data-driven execution, currated expertise has resulted in as high as 40% conversion ratios for a few clients.
+                        </div>
+                        <a class="read-more"><span class="icon-arrows-1"></span></a>
                     </div>
                 </div>
                 <div class="services-block-one">
@@ -579,10 +601,12 @@
                         <a class="read-more"><span class="icon-arrows-1"></span></a>
                     </div>
                 </div>
+                
                 <!-- end -->
             </div>
         </div>
     </section>
+
 
     <!--Fun Facts Section-->
     <!-- <div class="fact-counter-section sp-two" style="background-image: url(images/background/web-2-L.jpg)">
@@ -2064,8 +2088,8 @@
                             <div class="form-group style-two ">
                                 
                                     
-                                <input type="tel" name="form_number" class="form-control required contact-info-section" 
-                                    placeholder="Contact no*" required/>
+                                <input type="tel" id="form_number" name="form_number" value="" data-dail-code=""  class="form-control required contact-info-section" 
+                                     required placeholder="Contact*"/>
                                 <!-- <div class=international-phone>
                                     <span>
                                         <select class="inter-phone-inner" name="country">
@@ -2076,7 +2100,7 @@
                                             <option value="Singapore +65">Singapore +65</option>
                                             <option value="Dubai +971">Dubai +971</option>
                                         </select>
-                                    </span>
+                                    </span>                                                                                                               
                                 </div>
                                  -->
                             <!-- <div class="form-group">
@@ -2106,6 +2130,8 @@
                                   />
                                 </div> -->
                             </div>
+                            <div class="alert alert-info" style="display: none;"></div>
+      <div class="alert alert-error" style="display: none;"></div>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group style-two">
@@ -2311,8 +2337,14 @@
     </section>
     
     <div class="fixed-btn"  data-toggle="modal" data-target="#enquiry-form">
-        <a ><button type="button" class=" btn-orange">LET'S  CONNECT</button></a>
+        <a><button type="button" class=" btn-orange">LET'S  CONNECT</button></a>
     </div>
+
+    <div class="whatsapp-logo-div">
+        <a href="https://api.whatsapp.com/send?phone=+918080335660&text=Hi%2C%20There%21%0A%0AI%20am%20interested%20in%20exploring%20your%20digital%20offerings%2E">  <img class="whatsapp-logo" src="images\icons\whatsapp.logo.png"></a>
+        
+    </div>
+
     <div
       class="modal fade"
       id="enquiry-form"
@@ -2449,6 +2481,73 @@
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     rel="stylesheet"
   /> -->
+  <script>
+    // Handle international prefixes, format phone input field
+    // Uses intl-tel-input plugin
+    // const phoneInputField = document.querySelector("#form_number");
+    // const phoneInput = window.intlTelInput(phoneInputField, {
+    //   // https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+    //   preferredCountries: ["us", "co", "in", "de"],
+    //   utilsScript:
+    //     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+    // });
+
+    // const info = document.querySelector(".alert-info");
+    // const error = document.querySelector(".alert-error");
+
+    // function process(event) {
+    //   event.preventDefault();
+
+    //   const phoneNumber = phoneInput.getNumber();
+
+    //   info.style.display = "none";
+    //   error.style.display = "none";
+
+      // OPTION 1 - Twilio Lookup API
+      // Pros: Free API call, updated data
+      // Pros: The Lookup API can return line type and carrier info too: https://www.twilio.com/docs/lookup/api
+      // Cons: Network request
+    //   const data = new URLSearchParams();
+    //   data.append("form_number", phoneNumber);
+
+    //   fetch("./contact-form-ctc", {
+    //     method: 'POST',
+    //     body: data
+    //   })
+    //   .then(response => response.json())
+    //   .then(json => {
+    //     if (json.success) {
+    //       info.style.display = "";
+    //       info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`
+    //     } else {
+    //       console.error(json.error);
+    //       error.style.display = "";
+    //       error.innerHTML = json.error;
+    //     }
+    //   })
+    //   .catch(err => {
+    //     error.style.display = "";
+    //     error.innerHTML = `Something went wrong: ${err}`
+    //   });
+
+      // OPTION 2 - intl-tel-input validity check
+      // Pros: No additional API call
+      // Cons: Requires plugin updates for updates on phone number validity
+      // if (phoneInput.isValidNumber()) {
+      //   info.style.display = "";
+      //   info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`
+      // } else {
+      //   error.style.display = "";
+      //   error.innerHTML = `Invalid phone number.`
+      // }
+    // }
+
+    // const form = document.getElementById("contact-form-ctc");
+    // form.addEventListener("submit", process);
+  </script>
+  
+</body>
+</html>
     
 </body>
 
