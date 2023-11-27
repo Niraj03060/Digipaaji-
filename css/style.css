@@ -1515,10 +1515,15 @@ font-family: 'Raleway', sans-serif;*/
 /*Services Block one*/
 
 .services-block-one {
+	height: 360px;
+	position: relative;
+	width: 19.99%;
+}
+/* .services-block-one {
 	height: 257px;
 	position: relative;
 	width: 33.3%;
-}
+} */
 
 .services-block-one .inner-box {
 	text-align: center;
@@ -1601,7 +1606,8 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .services-block-one .inner-box .text {
-	height: 94px;
+	/* height: 94px; */
+	height: 130px;
 	position: relative;
 	color: #353535;
 	font-size: 16px;
