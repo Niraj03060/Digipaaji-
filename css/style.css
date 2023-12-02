@@ -2481,7 +2481,7 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .blog-image {
-	width: 400px;
+	width: 330px;
 	height: 270px;
 }
 
@@ -3760,3 +3760,64 @@ font-family: 'Raleway', sans-serif;*/
 .international-phone select option{
 	color: #9e9e9e;
 } */
+
+
+/* ******* Blogs styling ******* */
+
+.blog-page{
+	display: flex;
+	flex-direction: row;
+}
+
+.blog-section-1{
+	text-align: center;
+	width: 70%;
+}
+
+.blog-title{
+	font-size: 2.5rem;
+	font-family: 'rubik';
+	font-weight: 600;
+	color: #222222;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 90px;
+	text-align: left;
+}
+
+.blog_image{
+	width: 80%;
+	height: auto;
+}
+
+.lower_content_title{
+	color: #222222;
+    text-align: left;
+	padding: 0px 90px;
+	font-size: 2rem;
+    line-height: 55px;
+    font-weight: 600;
+}
+
+.lower_content_text{
+	text-align: left;
+	padding: 0px 90px;
+	font-size: 1.8rem;
+}
+
+.blog-section-2{
+	width: 30%;
+}
+
+.blog-section-2-title{
+	display: inline-block;
+	vertical-align: top;
+}
+.blog-section-2-text{
+	line-height: 2rem;
+}
+
+.blog-section-2-inner{
+	margin: 10px 0px 10px 0px;
+	padding: 10px 5px 10px 5px;
+	border: 1px solid grey;
+}
