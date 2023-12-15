@@ -1515,9 +1515,9 @@ font-family: 'Raleway', sans-serif;*/
 /*Services Block one*/
 
 .services-block-one {
-	height: 360px;
+	/* height: 360px; */
 	position: relative;
-	width: 19.99%;
+	width: 33.33%;
 }
 /* .services-block-one {
 	height: 257px;
