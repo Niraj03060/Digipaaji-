@@ -1460,6 +1460,11 @@ font-family: 'Raleway', sans-serif;*/
 	position: relative;
 	margin: 40px 0px;
 }
+.text-block-one h1{
+	position: relative;
+	margin: 40px 0px;
+	font-size: 30px;
+}
 
 .text-block-one h2 b {
 	font-weight: 800;
@@ -1515,7 +1520,7 @@ font-family: 'Raleway', sans-serif;*/
 /*Services Block one*/
 
 .services-block-one {
-	/* height: 360px; */
+	height: 250px;
 	position: relative;
 	width: 33.33%;
 }
@@ -1585,7 +1590,7 @@ font-family: 'Raleway', sans-serif;*/
 .services-block-one .inner-box h3 {
 	position: relative;
 	font-size: 18px;
-	color: #F78E3B;
+	color: #F3713C;
 	font-weight: 800;
 	text-transform: uppercase;
 	line-height: 26px;
@@ -3485,7 +3490,7 @@ font-family: 'Raleway', sans-serif;*/
 	font-size: 1.7rem;
 	max-width: 580px;
 	margin: 5px 0px 10px 0px;
-	padding: 36px 10px 6px 10px;
+	padding: 30px 10px 6px 10px;
 }
 
 .contact-section-btn {
@@ -3512,9 +3517,11 @@ font-family: 'Raleway', sans-serif;*/
 	flex-wrap: wrap;
 }
 
+
+
 .verified-by-container .image-bottom img {
-	height: 110px;
-	width: 110px;
+	height: 100px;
+	width: auto;
 }
 
 .footer-text {
@@ -3838,11 +3845,14 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .blog-section-2-title{
+	color: #F3713C;
+	font-weight: 600;
 	margin: 0px 0px 0px 12px;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 .blog-section-2-text{
+	margin: 7px 0px 0px 0px;
 	line-height: 2rem;
 	color: #222222;
 }
@@ -3850,7 +3860,7 @@ font-family: 'Raleway', sans-serif;*/
 .blog-section-2-inner{
 	margin: 10px 0px 5px 0px;
 	padding: 20px 10px 10px 10px;
-	border: 1px solid grey;
+	border: 1px solid #F3713C;
 }
 
 .blog-section-2-img{
@@ -3954,4 +3964,176 @@ font-family: 'Raleway', sans-serif;*/
 .project-section-2-img{
 	height: auto;
 	width: 100%;
+}
+
+
+
+
+
+/* 
+:root {
+    --primary: #111;
+    --secondary: #fd0;
+}	 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    font-family: sans-serif;
+    background-color: var(--secondary);
+}
+
+.select-box {
+    position: relative;
+
+    /* width: 26rem;
+    margin: 7rem auto; */
+}
+
+.select-box input {
+    width: 100%;
+    padding: 1rem .6rem;
+    font-size: 1.1rem;
+    
+    border: .1rem solid transparent;
+    outline: none;
+}
+
+input[type="tel"] {
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.select-box input:focus {
+    border: .1rem solid var(--primary);
+}
+
+.selected-option {
+    /* background-color: #eee; */
+    border-radius: .5rem;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-left: 35px;
+    width: 100%;
+}
+
+
+.selected-option div{
+	height: 32px;
+    position: relative;
+    width: 10rem;
+    padding: 4px 2.8rem 0 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+
+}
+
+.selected-option div::after{
+    position: absolute;
+    content: "";
+    right: .8rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    
+    width: .8rem;
+    height: .8rem;
+    border-right: .12rem solid var(--primary);
+    border-bottom: .12rem solid var(--primary);
+
+    transition: .2s;
+}
+
+.selected-option div.active::after{
+    transform: translateY(-50%) rotate(225deg);
+}
+
+.select-box .options {
+    position: absolute;
+    top: 4rem;
+    
+    width: 100%;
+    background-color: #fff;
+    border-radius: .5rem;
+
+    display: none;
+}
+
+.select-box .options.active {
+	content: "";
+	display: block;
+    z-index: 9;
+    margin: 0px 0px 0px 35px;
+}
+
+.select-box .options::before {
+    position: absolute;
+    content: "";
+    left: 1rem;
+    top: -1.2rem;
+
+    width: 0;
+    height: 0;
+    border: .6rem solid transparent;
+    border-bottom-color: var(--primary);
+}
+
+input.search-box {
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: .5rem .5rem 0 0;
+    padding: 1.4rem 1rem;
+}
+
+.select-box ol {
+    list-style: none;
+    max-height: 23rem;
+    overflow: overlay;
+}
+
+.select-box ol::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+.select-box ol::-webkit-scrollbar-thumb {
+    width: 0.4rem;
+    height: 3rem;
+    background-color: #ccc;
+    border-radius: .4rem;
+}
+
+.select-box ol li {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.select-box ol li.hide {
+    display: none;
+}
+
+.select-box ol li:not(:last-child) {
+    border-bottom: .1rem solid #eee;
+}
+
+.select-box ol li:hover {
+    background-color: lightcyan;
+}
+
+.select-box ol li .country-name {
+    margin-left: .4rem;
+}
+
+.contact-form.style-four input[type="tel"]{
+	position: absolute;
+    top: 4%;
+    left: 24%;
+    width: 73%;
 }

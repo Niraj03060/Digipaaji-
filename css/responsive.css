@@ -748,8 +748,8 @@
 	}
 
 	.verified-by-container .image-bottom img {
-		height: 90px;
-		width: 90px;
+		height: auto;
+		width: 75px;
 	}
 
 	.verified-by-title {
@@ -834,9 +834,12 @@
 		font-weight: 700;
 		margin-bottom: 10px;
 	}
+	.contact-us-inner-container {
+		padding: 15px 10px 6px 10px;
+    }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 450px) {
 
 	.verified-by-main-container {
 		display: flex;
@@ -847,8 +850,14 @@
 	}
 
 	.verified-by-container .image-bottom img {
-		height: 60px;
+		height: auto;
 		width: 60px;
+	}
+
+	.image-bottom {
+		margin: 5px 0px;
+		text-align: center;
+		width: 33%;
 	}
 
 	.verified-by-title {
@@ -882,6 +891,10 @@
 		font-size: 8px;
 		font-weight: 700;
 		margin-bottom: 8px;
+	}
+
+	.contact-us-inner-container {
+		padding: 15px 10px 6px 10px;
 	}
 }
 
