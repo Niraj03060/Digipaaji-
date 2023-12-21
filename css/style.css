@@ -4038,14 +4038,14 @@ input[type="tel"] {
 .selected-option div::after{
     position: absolute;
     content: "";
-    right: .8rem;
-    top: 50%;
+    right: 2.2rem;
+    top: 53%;
     transform: translateY(-50%) rotate(45deg);
     
     width: .8rem;
     height: .8rem;
-    border-right: .12rem solid var(--primary);
-    border-bottom: .12rem solid var(--primary);
+    border-right: .12rem solid black;
+    border-bottom: .12rem solid black;
 
     transition: .2s;
 }

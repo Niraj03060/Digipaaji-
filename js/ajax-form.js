@@ -13,8 +13,8 @@ $("document").ready(function () {
       },
       form_number: {
         required: true,
-        minlength: 10,
-        maxlength: 10,
+        minlength: 8,
+        maxlength: 14,
       },
       form_email: {
         required: true,
@@ -27,7 +27,10 @@ $("document").ready(function () {
     messages: {
       form_name: { minlength: "Name at least have 4 characters" },
       form_number: {
-        minlength: "mobile number at least have 10 Digits",
+        minlength: "mobile number at least have 8 Digits",
+      },
+      form_number: {
+        maxlength: "mobile number at least have 14 Digits",
       },
       form_email: { email: "please enter a valid email address" },
     },
@@ -46,8 +49,8 @@ $("document").ready(function () {
       },
       form_number: {
         required: true,
-        minlength: 10,
-        maxlength: 10,
+        minlength: 8,
+        maxlength: 14,
       },
       form_email: {
         required: true,
@@ -59,7 +62,10 @@ $("document").ready(function () {
     messages: {
       form_name: { minlength: "Name at least have 4 characters" },
       form_number: {
-        minlength: "mobile number at least have 10 Digits",
+        minlength: "mobile number at least have 8 Digits",
+      },
+      form_number: {
+        maxlength: "mobile number at least have 14 Digits",
       },
       form_email: { email: "please enter a valid email address" },
     },
