@@ -1229,3 +1229,26 @@
 		width: 100%;
 	}
 }
+
+
+@media only screen and (max-width: 450px){
+	.contact-form.style-four input[type="tel"] {
+		position: absolute;
+		top: 4%;
+		left: 32%;
+		width: 58%;
+	}
+	.contact-form input[type="text"]{
+        width: 95%;
+	}
+}
+
+@media only screen and (max-width: 350px){
+	.contact-form.style-four input[type="tel"] {
+		position: absolute;
+        top: 4%;
+        left: 36%;
+        width: 57%;
+}
+
+}
