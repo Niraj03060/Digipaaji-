@@ -40,6 +40,8 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <link href="css/responsive.css" rel="stylesheet" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <!--[if lt IE 9
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
@@ -277,7 +279,7 @@
           </div>
           <div class="blog-section-2-inner">
             <a href="blog3.html"><img class="blog-section-2-img" src="images\background\blog3.png"></a>
-            <a href="blog3.html"><h4 class="blog-section-2-title">By Hitesh Mapara<br><p>5th Jun</p></h4></a>
+            <a href="blog3.html"><h4 class="blog-section-2-title">By Hitesh Mapara</h4></a>
             <a href="blog3.html"><p class="blog-section-2-text">Want To Boost Your Career? Follow These 7 Social Media Etiquettes</p></a>
           </div>
           <div class="blog-section-2-inner">
@@ -301,7 +303,7 @@
         <div id="contact">
         <div class="container">
             <div class="sec-title centered">
-                <div class="big-title">Let's Connect</div>
+                <div class="big-title" id="contact-big-title">Let's Connect</div>
                 <h2>Let's Connect</h2>
             </div>
             <div class="default-form-area">
@@ -326,7 +328,22 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group style-two ">
                                 
-                                    
+                                <div class="select-box">
+                                    <div class="selected-option">
+                                        <div>
+                                            <span class="iconify" data-icon="flag:in-4x3" style="vertical-align: middle;"></span>
+                                            <strong style="vertical-align: middle;">+91 </strong>
+                                        
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="options">
+                                        <input type="text" class="search-box" placeholder="Search Country Name" style="margin-left: 0px;">
+                                        <ol>
+                            
+                                        </ol>
+                                    </div>
+                                </div>    
                                 <input type="tel" id="form_number" name="form_number" value="" data-dail-code=""  class="form-control required contact-info-section" 
                                      required placeholder="Contact*"/>
                                 <!-- <div class=international-phone>
@@ -369,9 +386,26 @@
                                   />
                                 </div> -->
                             </div>
+                           
+
                             <div class="alert alert-info" style="display: none;"></div>
       <div class="alert alert-error" style="display: none;"></div>
                         </div>
+                        <!-- <div class="select-box">
+                            <div class="selected-option">
+                                <div>
+                                    <span class="iconify" data-icon="flag:in-4x3"></span>
+                                    <strong>+91 </strong>
+                                </div>
+                                
+                            </div>
+                            <div class="options">
+                                <input type="text" class="search-box" placeholder="Search Country Name">
+                                <ol>
+                    
+                                </ol>
+                            </div>
+                        </div> -->
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group style-two">
                                 <textarea name="form_message" class="form-control textarea"
@@ -426,22 +460,25 @@
     <div class="verified-by-main-container">
     <h5 class="verified-by-title">Verified By</h5>
     <div class="verified-by-container">
-        <div class="image-bottom">
-            <img src="images\fancybox\1.svg">
-        </div>
-        <div class="image-bottom">
-            <img src="images\icons\verified-by6.svg">
-        </div>
-        <div class="image-bottom">
-            <a href="https://clutch.co/profile/digipaaji" target="_blank"><img src="images\fancybox\2.svg"></a>
-        </div>
-        <div class="image-bottom">
-            <a href="https://themanifest.com/in/digital-marketing/agencies/mumbai" target="_blank"><img src="images\fancybox\4.svg"></a>
-        </div>
-        <div class="image-bottom">
-            <a href="https://dribbble.com/search/digipaaji" target="_blank"><img src="images\fancybox\5.svg"></a>
-        </div>
-    </div>
+      <div class="image-bottom">
+          <img src="images\fancybox\1.svg">
+      </div>
+      <div class="image-bottom">
+          <img src="images\icons\verified-by6.svg">
+      </div>
+      <div class="image-bottom">
+          <img src="images\fancybox\6.png">
+      </div>
+      <div class="image-bottom">
+          <a href="https://clutch.co/profile/digipaaji" target="_blank"><img src="images\fancybox\2.svg"></a>
+      </div>
+      <div class="image-bottom">
+          <a href="https://themanifest.com/in/digital-marketing/agencies/mumbai" target="_blank"><img src="images\fancybox\4.svg"></a>
+      </div>
+      <div class="image-bottom">
+          <a href="https://dribbble.com/search/digipaaji" target="_blank"><img src="images\fancybox\5th.png"></a>
+      </div>
+  </div>
     <div class="contact-us-inner-container">
             
             <p>Kindly share your coordinates and we will be more than happy to help you in meeting 
@@ -631,9 +668,30 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <input type="tel" name="form_number" class="form-control required form-style36" 
-                                    placeholder="Contact no*" required/>
+                            
+                            <div class="form-group" id="selectbox-1">
+                                <div class="select-box1">
+                                    <div class="selected-option1">
+                                        <div>
+                                            <span class="iconify" data-icon="flag:in-4x3"></span>
+                                            <strong>+91</strong>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="options1">
+                                        <input type="text" class="search-box1" placeholder="Search Country Name" style="    width: 100%;
+                                        margin-left: 0px;">
+                                        <ol>
+                                    
+                                        </ol>
+                                    </div>
+                                    
+                                </div>
+                                <input type="tel" name="form_number" class="search-box1" class="form-control required form-style36" 
+                                    placeholder="Contact no*" required style="    width: 57%;
+                                    position: absolute;
+                                    top: 0%;
+                                    left: 36%;"/>
                             </div>
                         </div>
                         <!-- <div class="col-md-12 col-sm-12 col-xs-12">
@@ -699,6 +757,8 @@
  <script id="map-script" src="js/map-script.js"></script>
  <script src="js\validation.js"></script>
  <script src="js\ajax-form.js"></script>
+ <script src="js\pagenav\trial.js"></script>
+
 
  <!-- <script type="text/javascript" charset="utf-8">
      $(window).on("load", function () {

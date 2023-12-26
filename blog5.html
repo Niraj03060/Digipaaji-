@@ -40,6 +40,8 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <link href="css/responsive.css" rel="stylesheet" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <!--[if lt IE 9
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
@@ -256,7 +258,7 @@
         <div id="contact">
         <div class="container">
             <div class="sec-title centered">
-                <div class="big-title">Let's Connect</div>
+                <div class="big-title" id="contact-big-title">Let's Connect</div>
                 <h2>Let's Connect</h2>
             </div>
             <div class="default-form-area">
@@ -281,7 +283,22 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group style-two ">
                                 
-                                    
+                                <div class="select-box">
+                                    <div class="selected-option">
+                                        <div>
+                                            <span class="iconify" data-icon="flag:in-4x3" style="vertical-align: middle;"></span>
+                                            <strong style="vertical-align: middle;">+91 </strong>
+                                        
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="options">
+                                        <input type="text" class="search-box" placeholder="Search Country Name" style="margin-left: 0px;">
+                                        <ol>
+                            
+                                        </ol>
+                                    </div>
+                                </div>    
                                 <input type="tel" id="form_number" name="form_number" value="" data-dail-code=""  class="form-control required contact-info-section" 
                                      required placeholder="Contact*"/>
                                 <!-- <div class=international-phone>
@@ -324,9 +341,26 @@
                                   />
                                 </div> -->
                             </div>
+                           
+
                             <div class="alert alert-info" style="display: none;"></div>
       <div class="alert alert-error" style="display: none;"></div>
                         </div>
+                        <!-- <div class="select-box">
+                            <div class="selected-option">
+                                <div>
+                                    <span class="iconify" data-icon="flag:in-4x3"></span>
+                                    <strong>+91 </strong>
+                                </div>
+                                
+                            </div>
+                            <div class="options">
+                                <input type="text" class="search-box" placeholder="Search Country Name">
+                                <ol>
+                    
+                                </ol>
+                            </div>
+                        </div> -->
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group style-two">
                                 <textarea name="form_message" class="form-control textarea"
@@ -381,22 +415,25 @@
     <div class="verified-by-main-container">
     <h5 class="verified-by-title">Verified By</h5>
     <div class="verified-by-container">
-        <div class="image-bottom">
-            <img src="images\fancybox\1.svg">
-        </div>
-        <div class="image-bottom">
-            <img src="images\icons\verified-by6.svg">
-        </div>
-        <div class="image-bottom">
-            <a href="https://clutch.co/profile/digipaaji" target="_blank"><img src="images\fancybox\2.svg"></a>
-        </div>
-        <div class="image-bottom">
-            <a href="https://themanifest.com/in/digital-marketing/agencies/mumbai" target="_blank"><img src="images\fancybox\4.svg"></a>
-        </div>
-        <div class="image-bottom">
-            <a href="https://dribbble.com/search/digipaaji" target="_blank"><img src="images\fancybox\5.svg"></a>
-        </div>
-    </div>
+      <div class="image-bottom">
+          <img src="images\fancybox\1.svg">
+      </div>
+      <div class="image-bottom">
+          <img src="images\icons\verified-by6.svg">
+      </div>
+      <div class="image-bottom">
+          <img src="images\fancybox\6.png">
+      </div>
+      <div class="image-bottom">
+          <a href="https://clutch.co/profile/digipaaji" target="_blank"><img src="images\fancybox\2.svg"></a>
+      </div>
+      <div class="image-bottom">
+          <a href="https://themanifest.com/in/digital-marketing/agencies/mumbai" target="_blank"><img src="images\fancybox\4.svg"></a>
+      </div>
+      <div class="image-bottom">
+          <a href="https://dribbble.com/search/digipaaji" target="_blank"><img src="images\fancybox\5th.png"></a>
+      </div>
+  </div>
     <div class="contact-us-inner-container">
             
             <p>Kindly share your coordinates and we will be more than happy to help you in meeting 
@@ -539,81 +576,102 @@
     </div>
 
     <div
-      class="modal fade"
-      id="enquiry-form"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="enquiry-formTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-main-flex" role="document">
-        <div class="modal-flex1"><img src="images\background\Group 221 (2).png" ></div>
-        <div class="modal-content modal-flex1 modal-flex1-2">
-          <div class="modal-header">
-            <h3>Thinking Growth?</h3>
-            <h5
-              class="modal-title pl-2 pl-md-3 text-center"
-              id="exampleModalLongTitle"
-            >
-              Connect with PAAJI
-            </h5>
-            <button
-              type="button"
-              class="close custom-close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body d-flex flex-column">
-            <div id="errmsg"></div>
-            <div id="msg"></div>
-            <form id="modal-form-ctc" name="modal_contact_form" class="contact-form form-style36" action="javascript:void(0)"
-                    method="post">
+    class="modal fade"
+    id="enquiry-form"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="enquiry-formTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-main-flex" role="document">
+      <div class="modal-flex1"><img src="images\background\Group 221 (2).png" ></div>
+      <div class="modal-content modal-flex1 modal-flex1-2">
+        <div class="modal-header">
+          <h3>Thinking Growth?</h3>
+          <h5
+            class="modal-title pl-2 pl-md-3 text-center"
+            id="exampleModalLongTitle"
+          >
+            Connect with PAAJI
+          </h5>
+          <button
+            type="button"
+            class="close custom-close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column">
+          <div id="errmsg"></div>
+          <div id="msg"></div>
+          <form id="modal-form-ctc" name="modal_contact_form" class="contact-form form-style36" action="javascript:void(0)"
+                  method="post">
 
-                    <div class="row clearfix">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <input type="text" name="form_name" class="form-control form-style36"  placeholder="Name*"
-                                    required="" />
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <input type="email" name="form_email" class="form-control required email form-style36" 
-                                    placeholder="Email Address*" required="" />
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <input type="tel" name="form_number" class="form-control required form-style36" 
-                                    placeholder="Contact no*" required/>
-                            </div>
-                        </div>
-                        <!-- <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="form-group style-two">
-                                <textarea name="form_message" class="form-control textarea"
-                                    placeholder=" Message"></textarea>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="contact-section-btn">
-                        <div class="form-group ml-50 mr-50">
-                            <!-- <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden"
-                                 /> -->
-                            <!-- <a href="thankyou.html"> -->
-                                <button  class="theme-btn btn-style-fifteen-1 w-50" id="submit-btn" type="submit"
-                                data-loading-text="Please wait..." >
-                                Submit
-                            </button>
-                        </div>
-                    </div>
-                </form>
-          </div>
+                  <div class="row clearfix">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                          <div class="form-group">
+                              <input type="text" name="form_name" class="form-control form-style36"  placeholder="Name*"
+                                  required="" />
+                          </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                          <div class="form-group">
+                              <input type="email" name="form_email" class="form-control required email form-style36" 
+                                  placeholder="Email Address*" required="" />
+                          </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                          
+                          <div class="form-group" id="selectbox-1">
+                              <div class="select-box1">
+                                  <div class="selected-option1">
+                                      <div>
+                                          <span class="iconify" data-icon="flag:in-4x3"></span>
+                                          <strong>+91</strong>
+                                      </div>
+                                     
+                                  </div>
+                                  <div class="options1">
+                                      <input type="text" class="search-box1" placeholder="Search Country Name" style="    width: 100%;
+                                      margin-left: 0px;">
+                                      <ol>
+                                  
+                                      </ol>
+                                  </div>
+                                  
+                              </div>
+                              <input type="tel" name="form_number" class="search-box1" class="form-control required form-style36" 
+                                  placeholder="Contact no*" required style="    width: 57%;
+                                  position: absolute;
+                                  top: 0%;
+                                  left: 36%;"/>
+                          </div>
+                      </div>
+                      <!-- <div class="col-md-12 col-sm-12 col-xs-12">
+                          <div class="form-group style-two">
+                              <textarea name="form_message" class="form-control textarea"
+                                  placeholder=" Message"></textarea>
+                          </div>
+                      </div> -->
+                  </div>
+                  <div class="contact-section-btn">
+                      <div class="form-group ml-50 mr-50">
+                          <!-- <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden"
+                               /> -->
+                          <!-- <a href="thankyou.html"> -->
+                              <button  class="theme-btn btn-style-fifteen-1 w-50" id="submit-btn" type="submit"
+                              data-loading-text="Please wait..." >
+                              Submit
+                          </button>
+                      </div>
+                  </div>
+              </form>
         </div>
       </div>
     </div>
+  </div>
     
 
 
@@ -654,6 +712,8 @@
  <script id="map-script" src="js/map-script.js"></script>
  <script src="js\validation.js"></script>
  <script src="js\ajax-form.js"></script>
+ <script src="js\pagenav\trial.js"></script>
+
 
  <!-- <script type="text/javascript" charset="utf-8">
      $(window).on("load", function () {
