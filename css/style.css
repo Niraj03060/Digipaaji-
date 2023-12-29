@@ -2487,7 +2487,7 @@ font-family: 'Raleway', sans-serif;*/
 
 .blog-image {
 	width: 330px;
-	height: 270px;
+	height: auto;
 }
 
 
@@ -3864,8 +3864,8 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .blog-section-2-img{
-	height: 50px;
-	width: 61.11px;
+	height: auto;
+	width: 62px;
 }
 
 .slide-right {
