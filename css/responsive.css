@@ -1252,3 +1252,9 @@
 }
 
 }
+
+@media only screen and (min-width: 990px){
+	.about-us-text{
+		font-size: 20px;
+	}
+}

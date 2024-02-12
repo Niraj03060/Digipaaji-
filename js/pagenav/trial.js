@@ -268,13 +268,16 @@ for (country of countries1) {
     <li class="option1">
         <div>
             <span class="iconify" data-icon="flag:${country.code.toLowerCase()}-4x3"></span>
-            <span class="country-name">${country.name}</span>
+            <span class="country-name-1">${country.name}</span>
         </div>
         <strong>+${country.phone}</strong>
     </li> `;
 
     select_box1.querySelector('ol').insertAdjacentHTML('beforeend', option1);
     options1 = document.querySelectorAll('.option1');
+
+    
+
 }
 
 function selectOption1() {
@@ -294,11 +297,12 @@ function selectOption1() {
     select_box1.querySelectorAll('.hide').forEach(el => el.classList.remove('hide'));
 }
 
-function searchCountry() {
-    let search_query = search_box.value.toLowerCase();
-    for (options1 of options1) {
-        let is_matched = option.querySelector('.country-name').innerText.toLowerCase().includes(search_query);
-        options1.classList.toggle('hide', !is_matched)
+function searchCountry1() {
+    
+    let search_query = search_box1.value.toLowerCase();
+    for (option of options1) {
+        let is_matched = option.querySelector('.country-name-1').innerText.toLowerCase().includes(search_query);
+        option.classList.toggle('hide', !is_matched)
     }
 }
 
@@ -309,4 +313,7 @@ selected_option1.addEventListener('click', () => {
 })
 
 options1.forEach(option1 => option1.addEventListener('click', selectOption1));
-search_box1.addEventListener('.select-box1 input', searchCountry1);
+search_box1.addEventListener('input', searchCountry1);
+
+
+// Use camelCase in JS
