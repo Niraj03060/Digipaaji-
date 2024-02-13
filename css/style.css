@@ -3314,9 +3314,14 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .partner-logo .image .partners-title {
-	opacity: 0.5;
+	opacity: 0.92;
 	transition: .5s ease;
 	user-select: none;
+}
+
+.partners-title {
+	color: #F3713C;
+	background-color: #000000;
 }
 
 .partner-logo .image:hover .partners-title {
@@ -3485,6 +3490,7 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .contact-us-inner-container {
+	text-align: center;
 	font-family: 'Rubik';
 	color: #222222;
 	font-size: 1.7rem;
