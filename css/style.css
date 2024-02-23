@@ -3924,11 +3924,12 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .lower_content_title{
+	margin: 18px 0px;
 	color: #222222;
     text-align: left;
 	/* padding: 0px 90px; */
 	font-size: 2rem;
-    line-height: 55px;
+    line-height: 30px;
     font-weight: 600;
 }
 
