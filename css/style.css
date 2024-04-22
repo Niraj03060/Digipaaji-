@@ -2486,6 +2486,9 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .blog-image {
+	box-shadow: 1.6px 1.6px 5.6px grey;
+    border-radius: 11px;
+    text-align: center;
 	width: 330px;
 	height: auto;
 }
@@ -2960,6 +2963,20 @@ font-family: 'Raleway', sans-serif;*/
 
 /*Blog Category*/
 
+.main-blog-div{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.inner-blog-div{
+	width: 30%;
+	margin: 10px 15px 5px 15px;
+	padding: 10px 15px;
+    border: 1.5px solid #cfcfcf;
+    border-radius: 16px;
+    box-shadow: 2.5px 2.5px 4px #F3713C;
+}
+
 .blog-cat {
 	position: relative;
 	padding: 20px 25px 20px;
@@ -3055,6 +3072,7 @@ font-family: 'Raleway', sans-serif;*/
 .blogs-btn{
 	display: inline-block;
 	padding: 10px 45px;
+	margin: 30px 0px 0px 0px;
 	text-align: center;
 	border: 1px solid #ffffff;
 	background-color: #F3713C;

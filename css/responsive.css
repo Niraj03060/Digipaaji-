@@ -1150,6 +1150,18 @@
 	}
 }
 
+@media only screen and (max-width: 1000px){
+    .inner-blog-div{
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+    .inner-blog-div{
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width: 800px){
 	.project-page{
 		display: flex;
